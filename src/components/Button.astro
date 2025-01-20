@@ -1,0 +1,11 @@
+---
+const { label, type = "button", styleClass = "" } = Astro.props;
+---
+<!-- El styleClass me permite que el boton sea del mismo ancho que el formulario -->
+
+<button
+  type={type}
+  class={`bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ${styleClass}`}
+>
+  {label}
+</button>

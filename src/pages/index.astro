@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import datos from '../data/data.json';
+import Proyectos from '../components/Proyectos.astro';
+import Estudios from '../components/Estudios.astro';
+import Trabajos from '../components/Trabajos.astro';
+import Formulario from '../components/Formulario.astro';
+import Referencias from '../components/Referencias.astro';
+
+---
+
+<Layout>
+	<div id="about-me" class="font font-poppins italic">
+		
+		<h1 class="text-2xl font-black text-center">{datos.aboutMe.questudio}</h1>
+		<h1 class="text-2xl font-black text-center text-blue-500">{datos.aboutMe.quesoy}</h1>
+
+		<div class="flex fex-col flex-row h-screen mx-44">
+			<img src={datos.aboutMe.foto} alt="Aquí voy yo" class="w-80 h-80 pt-4 pr-6 pl-10" style="border-radius: 10px">
+			
+			<div class="flex flex-col gap-4">
+				<h1 class="text-2xl font-poppins italic font-black text-color6 mt-6">{datos.aboutMe.nombre}<br>{datos.aboutMe.apellido1}<br>{datos.aboutMe.apellido2}</h1>
+				<h2 class="text-xl text-color3 font-poppins italic whitespace-pre-line">{datos.aboutMe.descripcion}</h2>
+			</div>
+			
+      	</div>
+	</div>
+
+	<h3 class="text-center font font-poppins italic text-xl font-bold mb-2" id="skills">Skills</h3>
+	<div id="skills" class="my-12 font font-poppins italic">
+		<div class="grid grid-rows-3 gap-4 max-w-4xl mx-auto">
+		  <div class="gap-4 w-full">
+			<div class="flex flex-row justify-center gap-4 mb-8">
+			  {datos.skills.map((skill) => (
+				<div class="flex flex-col md:w-1/6 justify-center items-center gap-2 text-center bg-color3 text-whitish font-medium px-4 py-2 shadow-lg hover:bg-color2 hover:drop-shadow-md hover:text-blackish hover:scale-110 transition">
+				  <img src={skill.imagen} class="w-8" alt={skill.skill} />
+				  <div class="text-xs">
+					{skill.nivel}
+				  </div>
+				</div>
+			  ))}
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<!-- Este div permite que haya algo de espaciado entre cada elemento -->
+	<div class="space-y-12">
+		<h3 class="text-center font font-poppins italic text-xl font-bold mb-2" id="estudios">Estudios</h3>
+		<Estudios />
+
+		<h3 class="text-center font font-poppins italic text-xl font-bold mb-2" id="trabajos">Trabajos</h3>
+		<Trabajos />
+
+		<h3 class="text-center font font-poppins italic text-xl font-bold mb-2" id="proyectos">Proyectos</h3>
+		<Proyectos />
+
+		<h3 class="text-center font font-poppins italic text-xl font-bold mb-2" id="referencias">Referencias</h3>
+		<Referencias />
+
+		<h3 class="text-center font font-poppins italic text-xl font-bold mb-2" id="contact">Contactame</h3>
+		<Formulario />
+	</div>
+	
+
+</Layout>

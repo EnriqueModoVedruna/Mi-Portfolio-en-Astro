@@ -1,0 +1,23 @@
+---
+const {nombre, escudo, año, descripcion, titulo} = Astro.props
+---
+
+<div class="grid grid-cols-2 grid-rows-1 w-full p-2 place-items-center border-[1px] py-8">
+    <!-- Primera columna -->
+    <div class="flex items-center gap-4 self-start justify-self-start">
+        <!-- Imagen del escudo -->
+        <img src={escudo} alt="Escudo" class="w-20 h-20 object-contain"/>
+
+        <!-- Nombre y título al lado de la imagen -->
+        <div>
+            <p class="text-text/50 text-base"><b>{nombre}</b></p>
+            <p class="text-lg text-text/70 text-sm">{titulo}</p>
+        </div>
+    </div>
+
+    <!-- Segunda columna -->
+    <div class="self-start justify-self-start text-left">
+        <b><p class="text-lg text-text/70">{descripcion}</p></b>
+        <p class="text-lg text-text/70">{año}</p>
+    </div>
+</div>

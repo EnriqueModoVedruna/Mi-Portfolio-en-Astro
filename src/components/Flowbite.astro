@@ -1,0 +1,21 @@
+---
+const {imagen, skill, nivel} = Astro.props
+---
+
+<div id="skills" class="my-12 font font-poppins italic">
+    <div class="grid grid-rows-3 gap-4 max-w-4xl mx-auto">
+      <div class="gap-4 w-full">
+        <h3 class="text-center font font-poppins italic text-xl font-bold">Skills</h3>
+        <div class="flex flex-row justify-center gap-4">
+          
+            <div class="flex flex-col md:w-1/6 justify-center items-center gap-2 text-center bg-color3 text-whitish font-medium px-4 py-2 shadow-lg hover:bg-color2 hover:drop-shadow-md hover:text-blackish hover:scale-110 transition">
+              <img src={imagen} class="w-8" alt={skill} />
+              <div class="text-xs">
+                {nivel}
+              </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+</div>

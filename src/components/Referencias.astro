@@ -1,0 +1,17 @@
+---
+import DATOS from "../data/data.json"
+import RDB from "./RDB.astro"
+---
+
+<div id="referencias">
+    {DATOS.referencias.map((item) => (
+      <RDB
+        foto={item.foto}
+        nombre={item.nombre}
+        descripcion={item.descripcion}
+        oficio={item.oficio}
+        sombra={item.sombra}
+        enlace={item.enlace}
+      />
+    ))}
+  </div>

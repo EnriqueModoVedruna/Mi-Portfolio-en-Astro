@@ -1,0 +1,16 @@
+---
+import DATOS from "../data/data.json"
+import Horizontal from "./Horizontal.astro"
+---
+
+<div id="estudios" class="font font-poppins italic">
+    {DATOS.estudios.map((item) => (
+      <Horizontal
+        escudo={item.escudo}
+        nombre={item.instituto}
+        titulo={item.titulo}
+        año={item.año}
+        descripcion={item.datos}
+      />
+    ))}
+  </div>

@@ -1,0 +1,144 @@
+{
+    "aboutMe": {
+      "nombre": "Enrique",
+      "apellido1": "Díaz",
+      "apellido2": "Perez",
+      "questudio": "Desarrollador Web y",
+      "quesoy": "Microinformatico",
+      "descripcion": "Capacidad para manejar \n sistemas Windows y \n Linux (Incluyendo Windows \n y Linux Server) con conocimientos \n de varios lenguajes de programacion \ny marcado.",
+      "foto": "/fotoMia.png"
+    },
+    "estudios": [
+        {
+            "año": "2023 - 2025",
+            "titulo": "Desarrollo de Aplicaciones Web",
+            "datos": "Programacion en Java, JavaScript, Astro, HTML, CSS, SQL.",
+            "instituto": "Santa Joaquina de Vedruna",
+            "escudo": "/vedruna.png"
+        },
+        {
+            "año": "2021 - 2023",
+            "titulo": "Microinformatica y Telecomunicaciones",
+            "datos": "Montaje y Mantenimiento de equipos, desarrollo de redes locales, HTML y CSS, Formacion y Orientacion Laboral y Empresa e Iniciativa Emprendedora.",
+            "instituto": "Nuestra Señora de los Reyes (SAFA)",
+            "escudo": "/safa.png"
+        },
+        {
+            "año": "2016 - 2020",
+            "titulo": "Zombie de elite",
+            "datos": "Incurcación de valores sobre la dominación, protección con conos y reconocimiento oficial del Dr. Edgar.",
+            "instituto": "Academia Zombie",
+            "escudo": "/z.png"
+        },
+        {
+            "año": "2023 - 2024",
+            "titulo": "Brawl Star",
+            "datos": "Adaptacion a cualquier situacion contra cualquier adversidad, analisis de posibilidades y trabajo en equipo.",
+            "instituto": "Academia Brawl",
+            "escudo": "/ba.png"
+        },
+        {
+            "año": "2018 - 2025",
+            "titulo": "Trotamundos",
+            "datos": "Busqueda de supervivientes, construccion de estructuras, armamento y lucha contra monstruos de la tormenta.",
+            "instituto": "Base de Bosque Perdegoso",
+            "escudo": "/eat.png"
+        }
+    ],
+    "skills": [
+        { "skill": "HTML", "nivel": "Nivel: Intemedio", "imagen": "/html.png" }, 
+        { "skill": "CSS", "nivel": "Nivel: Intermedio", "imagen": "/css.png" },
+        { "skill": "JavaScript", "nivel": "Nivel: Intermedio", "imagen": "/js.png" },
+        { "skill": "Java", "nivel": "Nivel: Avanzado", "imagen": "/java.png" },
+        { "skill": "Astro", "nivel": "Nivel: Intermedio", "imagen": "/astro.png" },
+        { "skill": "SQL", "nivel": "Nivel: Avanzado", "imagen": "/mysql.png" },
+        { "skill": "Linux", "nivel": "Nivel: Intermedio", "imagen": "/linux.png" },
+        { "skill": "Windows", "nivel": "Nivel: Avanzado", "imagen": "/windows.png" }
+    ],
+    "trabajos": [
+        {
+            "tiempo": "Marzo 2024 - Junio 2025",
+            "nombre": "SOLTEL",
+            "descripcion": "Administración de bases de datos, montaje y mantenimiento de equipos. Asistencia remota. Programación y diseño de páginas web y API´s.",
+            "imagen": "/soltel.jfif"
+        },
+        {
+            "tiempo": "Abril 2023 - Junio 2023",
+            "nombre": "LANZADERA MUSIC",
+            "descripcion": "Administración de bases de datos y gestión de sitios web, me encargo de la gestión de lanzamientos musicales, corrigiendo errores en el código de lanzamiento. Este trabajo fue telematico",
+            "imagen": "/lm.jfif"
+        },
+        {
+            "tiempo": "Enero 2023 - Abril 2023",
+            "nombre": "UPI",
+            "descripcion": "Montaje y mantenimiento de dispositivos electrónicos, durante este trabajo me desplacé por Sevilla realizando encargos para la Universidad de Sevilla (en todos los distritos)",
+            "imagen": "/upi.png"
+        },
+        {
+            "tiempo": "Marzo 2022 - Junio 2022",
+            "nombre": "CATSA, NITA",
+            "descripcion": "Montaje de equipos y mantenimiento de equipos, desarrollo de bases de datos en documentos Microsoft Access y Excel.",
+            "imagen": "/catsa.jpeg"
+        },
+        {
+            "tiempo": "Julio 2024",
+            "nombre": "Supermercados KIKO",
+            "descripcion": "Buscaba un trabajo sencillo para verano. Trabajé como panadero, reponedor y administrador de inventario.",
+            "imagen": "/kiko.png"
+        }
+    ],
+    "proyectos": [
+    
+        {
+            "imagen": "/twitter.png",
+            "nombre": "Clon Twitter",
+            "descripcion": "Una replica a mi manera de la red social Twitter, actualmente conocida como X.",
+            "sombra": "Proyecto en GitHub",
+            "enlace": "https://github.com/EnriqueModoVedruna/twitter_hacendado",
+            "tec": "/PHP.png"
+        },
+        {
+            "imagen": "/pokedex.png",
+            "nombre": "Pokedex",
+            "descripcion": "Una Pokedex funcional con todos los pokémon.",
+            "sombra": "Proyecto en GitHub",
+            "enlace": "https://github.com/EnriqueModoVedruna/Pokeapi",
+            "tec":"/js.png"
+        },
+        {
+            "imagen": "/portfolio.png",
+            "nombre": "Portfolio Beta",
+            "descripcion": "El primer diseño de mi portfolio.",
+            "sombra": "Figma",
+            "enlace": "https://www.figma.com/proto/K4t06lA4HvXKSl4VVXgOV3/curriculum-Enrique-D%C3%ADaz?node-id=1-2&t=gE3jarBYMREcCeWX-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
+            "tec": "/astro.png"
+        },
+        {
+            "imagen": "/api.png",
+            "nombre": "Api de Proyectos",
+            "descripcion": "Cree una base de datos junto a una API para poder crear proyectos junto a trabajadores y tecnologias como proyecto del 1er trimestre.",
+            "sombra": "Proyecto en GitHub",
+            "enlace": "https://github.com/EnriqueModoVedruna/API-Proyecto-Final-Primer-Trimestre",
+            "tec":"/springboot.png"
+        },
+        {
+            "imagen": "/opciones.png",
+            "nombre": "Fusion de la Api y el Portfolio",
+            "descripcion": "Hay un 3er proyecto que consiste en la implementacion de unas funciones extra.",
+            "sombra": "Proyecto en GitHub",
+            "enlace": "https://github.com/EnriqueModoVedruna/Proyecto-Final-Cliente",
+            "tec":"/js.png"
+        }
+    ],
+    "referencias": [
+        {
+            "foto": "/joaKing.png",
+            "nombre": "Joaquin Borrego",
+            "descripcion": "Mi tutor y profesor de Cliente y Servidor",
+            "oficio": "Profesor de Cliente y Servidor en FP de Grado Superior en Vedruna",
+            "sombra": "Linkedin",
+            "enlace": "https://es.linkedin.com/in/juakylc"
+        }
+    ]
+
+}

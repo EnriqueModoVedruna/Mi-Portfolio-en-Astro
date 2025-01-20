@@ -1,0 +1,15 @@
+---
+import DATOS from "../data/data.json"
+import Nintendo from "./Nintendo.astro"
+---
+
+<div id="trabajos">
+    {DATOS.trabajos.map((item) => (
+      <Nintendo
+        tiempo={item.tiempo}
+        nombre={item.nombre}
+        descripcion={item.descripcion}
+        imagen={item.imagen}
+      />
+    ))}
+  </div>

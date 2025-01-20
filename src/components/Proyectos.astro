@@ -1,0 +1,16 @@
+---
+import DATOS from "../data/data.json"
+import YT from "./YTCard.astro"
+---
+
+<div id="proyectos">
+    {DATOS.proyectos.map((item) => (
+      <YT
+        enlace={item.enlace}
+        imagen={item.imagen}
+        tec={item.tec}
+        titulo={item.nombre}
+        descripcion={item.descripcion}
+      />
+    ))}
+  </div>

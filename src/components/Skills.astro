@@ -1,0 +1,14 @@
+---
+import DATOS from "../data/data.json"
+import Flowbite from "./Flowbite.astro";
+---
+
+<div id="skills">
+    {DATOS.skills.map((item) => (
+      <Flowbite
+        imagen={item.imagen}
+        skill={item.skill}
+        nivel={item.nivel}
+      />
+    ))}
+  </div>

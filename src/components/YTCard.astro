@@ -1,0 +1,38 @@
+---
+const { imagen, titulo, descripcion, tec, enlace } = Astro.props
+---
+
+<a href={enlace} class="block border border-gray-300 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 hover:scale-105 transform bg-color3 text-whitish font-medium">
+    <div class="border-b-[1px] p-5">
+        <!-- Imagen principal -->
+        <div class="flex justify-center items-center">
+            <img src={imagen} alt="Imagen del proyecto" class="w-full h-80 object-cover rounded-lg shadow-md" />
+        </div>
+
+        <!-- Contenido del proyecto -->
+        <div class="flex flex-col md:flex-row items-center gap-6 mt-4">
+            <!-- Icono de tecnología -->
+            <img src={tec} alt="Tecnologia usada" class="w-10 h-10 rounded-full shadow-md" />
+
+            <!-- Texto -->
+            <div class="flex flex-col gap-2 text-center md:text-left">
+                <h1 class="text-xl font-poppins italic font-black text-color6">{titulo}</h1>
+                <h2 class="text-lg text-color3 font-poppins italic whitespace-pre-line">{descripcion}</h2>
+            </div>
+        </div>
+    </div>
+</a>
+
+
+<!-- <a href={enlace} class="block border border-gray-300 rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300">
+    <div class="border-b-[1px] pt-5">
+        <img src={imagen} alt="Imagen del proyecto" class="flex justify-center items-center">
+        <div class="flex fex-col flex-row h-screen mx-44">
+            <img src={tec} alt="Tecnologia usada" class="w-6 h-6 pt-4 pr-6 pl-10 rounded-full">
+            <div class="flex flex-col gap-4">
+                <h1 class="text-2xl font-poppins italic font-black text-color6 mt-6">{titulo}</h1>
+                <h2 class="text-xl text-color3 font-poppins italic whitespace-pre-line">{descripcion}</h2>
+            </div>
+        </div>
+    </div>
+</a> -->

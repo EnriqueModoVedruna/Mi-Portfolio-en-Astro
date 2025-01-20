@@ -1,0 +1,22 @@
+---
+const {tiempo, nombre, descripcion, imagen} = Astro.props
+---
+
+<div id="trabajos">
+    <div class="flex flex-row mx-10 items-start gap-6 py-4">
+      <!-- Imagen -->
+      <img 
+        src={imagen} 
+        alt="Logotipo de la empresa" 
+        class="w-28 h-28 rounded-md"
+      />
+      
+      <!-- Información -->
+      <div class="flex flex-col gap-2">
+        <h1 class="text-xl font-poppins italic font-bold text-color6">{nombre}</h1>
+        <p class="text-sm text-gray-500">{tiempo}</p>
+        <h2 class="text-base text-color3 font-poppins">{descripcion}</h2>
+      </div>
+    </div>
+  </div>
+  
